@@ -2,7 +2,7 @@
 #define _MAIN_H_
 /**
  * _putchar - thid function take a character and output it to the stdo
- * 
+ *
  * @c: this is the parameter a character
  *
  * Return: it return 0 or 1
@@ -51,6 +51,7 @@ int _isalpha(int c);
  *
  * @sign: parerter
  *
+ *Return: return int
  */
 int print_sign(int sign);
 
@@ -85,4 +86,5 @@ void jack_bauer(void);
  *
  */
 void times_table(void);
+
 #endif
