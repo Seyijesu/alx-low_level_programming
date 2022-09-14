@@ -79,4 +79,10 @@ int print_last_digit(int value);
  *
  */
 void jack_bauer(void);
+/**
+ * times_table - times this up
+ *
+ *
+ */
+void times_table(void);
 #endif
