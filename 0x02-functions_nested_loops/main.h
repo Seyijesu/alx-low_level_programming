@@ -1,7 +1,7 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 /**
- * _putchar - thid function take a character and output it to the stdo it return int 
+ * _putchar - thid function take a character and output it to the stdo
  * 
  * @c: this is the parameter a character
  *
@@ -27,7 +27,7 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 
 /**
- * _islower - check for lowercase alphabet 
+ * _islower - check for lowercase alphabet
  *
  * @c: the argurment character
  *
@@ -37,9 +37,9 @@ void print_alphabet_x10(void);
 int _islower(int c);
 
 /**
- * _isalpha - this check for alphabet 
+ * _isalpha - this check for alphabet
  *
- * @c: characher to check for 
+ * @c: characher to check for
  *
  * Return: return 1 for true and 0 for false
  *
@@ -49,15 +49,15 @@ int _isalpha(int c);
 /**
  * print_sign - main function
  *
- * @value - parerter
+ * @sign: parerter
  *
  */
-int print_sign(int value);
+int print_sign(int sign);
 
 /**
  * _abs - main funtion
  *
- * @sign: value to check
+ * @value: value to check
  *
  * Return: integar of the time
  *
