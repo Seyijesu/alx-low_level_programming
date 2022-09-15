@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isupper - the main function
+ * _isupper - the main function
  *
  * @c: entry parameter
  *
