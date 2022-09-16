@@ -18,4 +18,6 @@ void print_number(void)
 
 	_putchar('\n);
 
+	return void;
+
 }
