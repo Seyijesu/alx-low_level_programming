@@ -1,10 +1,11 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * fizz_buzz - print form 1 to 10
+ * main -entry point to  print form 1 to 100
  *
+ * Return: 0
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -12,23 +13,24 @@ void fizz_buzz(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			_putchar('FizzBuzz');
+			printf("FizzBuzz");
 		}
 		else if (i % 3 == 0)
 		{
-			_putchar('Fizz');
+			printf("Fizz");
 		}
 		else if (i % 5)
 		{
-			_putchar('Buzz');
+			printf("Buzz");
 		}
 		else
 		{
-			_putchar(i);
+			printf("%d", i);
 		}
 
-		_putchar(' ');
+		printf(" ");
 	}
 
-	_putchar('\n');
+	printf("\n");
+	return (0);
 }
