@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_number - print number from 0 to 9 using while loop
+ * print_numbers - print number from 0 to 9 using while loop
  *
  * Return: void
  *
  */
-void print_number(void)
+void print_numbers(void)
 {
 	char i;
 
