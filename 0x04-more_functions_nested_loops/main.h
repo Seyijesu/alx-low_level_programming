@@ -54,4 +54,9 @@ void print_numbers(void);
  */
 void print_most_numbers(void);
 
+/**
+ * more_numbers - this print number from 0 t0 14 x1o
+ *
+ */
+void more_numbers(void);
 #endif
