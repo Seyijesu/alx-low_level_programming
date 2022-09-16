@@ -1,3 +1,5 @@
+#ifndef _MAIN_H
+#define _MAIN_H
 /**
  * _putchar - function that print out a characher into stdout 
  *
@@ -25,3 +27,5 @@ int _isupper(int c);
  * Return: return 1 for true and 0 for false
  */
 int -isdigit(int c);
+
+#endif
