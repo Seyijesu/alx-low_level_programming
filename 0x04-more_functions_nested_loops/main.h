@@ -28,4 +28,16 @@ int _isupper(int c);
  * Return: 1 for true and 0 for false
  */
 int _isdigit(int c);
+
+/**
+ * mul - multiplying to unmber
+ *
+ * @a: first number
+ *
+ * @b: second number
+ *
+ * Return: a*b
+ */
+int mul(int a, int b);
+
 #endif
