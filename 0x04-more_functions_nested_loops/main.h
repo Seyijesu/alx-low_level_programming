@@ -83,4 +83,11 @@ void print_diagonal(int n);
  *
  */
 void print_square(int size);
+
+/**
+ * fizz_buzz - print 1 to 100 with fizz for multiple of 3 and buzz for 5
+ *
+ */
+
+void fizz_buzz(void);
 #endif
