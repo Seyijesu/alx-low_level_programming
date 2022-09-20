@@ -28,3 +28,23 @@ void swap_int(int *a, int *b);
  * Return: lenght of a variable string
  */
 int _strlen(char *s);
+
+
+/**
+ * _puts - this print string and end with new line
+ *
+ * @str: the pointer parameter
+ *
+ * Return: void
+ */
+void _puts(char *str);
+
+/**
+ * _putchar - print character to stdout
+ *
+ * @c: parameter
+ *
+ * Return: 0 or 1;
+ *
+ */
+int _putchar(char c);
