@@ -6,6 +6,8 @@
  * @dest: the arry to be concartinated to
  *
  * @src: source of array to be used
+ *
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -22,7 +24,7 @@ char *_strcat(char *dest, char *src)
 		dest[i + j] = src[j];
 
 	}
-
+	dest[i + j] = '\0';
 	return (dest);
 
 }
