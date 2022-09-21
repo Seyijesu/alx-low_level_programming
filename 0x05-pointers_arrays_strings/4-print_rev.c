@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
+#include "2-strlen.c"
 
 /**
  * print_rev - print reverse of string
@@ -15,6 +15,7 @@ void print_rev(char *s)
 
 	l = _strlen(s);
 	j = l - 1;
+
 	char temp[l];
 
 	for (i = 0; i < l; i++)
