@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * _puts - this print string and end with new line
@@ -9,12 +9,6 @@
  */
 void _puts(char *str)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		_putchar(i);
-
-	}
-	_putchar('\n');
+	puts(str);
+	puts('\n');
 }
