@@ -13,7 +13,7 @@ void print_rev(char *s)
 {
 	int i, l, j;
 
-	l = _strlen(*s);
+	l = sizeof(s);
 	j = l - 1;
 
 	char temp[l];
