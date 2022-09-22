@@ -18,3 +18,18 @@ char *_strcat(char *dest, char *src);
  * Return: concertenated dest
  */
 char *_strncat(char *dest, char *src, int n);
+
+
+/**
+ * _strncpy - copies string
+ *
+ * @dest: destination to copy to
+ *
+ * @src: word to copy
+ *
+ * @n: number of character to copy
+ *
+ * Return: dest
+ *
+ */
+char *_strncpy(char *dest, char *src, int n);
