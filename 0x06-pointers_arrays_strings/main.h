@@ -78,3 +78,13 @@ char *cap_string(char *);
  * Return: capitalised a
  */
 char *cap_string(char *a);
+
+
+/**
+ * leet - encode string
+ *
+ * @a: string to encode
+ *
+ * Return: encoded a
+ */
+char *leet(char *a);
