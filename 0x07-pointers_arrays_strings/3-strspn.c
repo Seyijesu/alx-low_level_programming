@@ -23,7 +23,12 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accpet[j])
 			{
 				len++;
+				break;
 			}
+		}
+		if (s[j] == '\0')
+		{
+			return (len);
 		}
 	}
 
