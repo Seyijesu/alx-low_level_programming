@@ -20,3 +20,11 @@ char *_memset(char *s, char b, unsigned int n);
  *
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
+
+/**
+ * _strchr -  a function that locates a character in a string
+ * @s: string to search from
+ * @c: character to look for
+ * Return: s startting from the first occurrence of c to the end of s
+ */
+char *_strchr(char *s, char c);
