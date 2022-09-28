@@ -67,3 +67,13 @@ int _pow_recursion(int x, int y);
  * Return: x to the power of y
  */
 int _pow_recursion(int x, int y);
+
+
+/**
+ * _sqrt_recursion - get natural sqaure root of a number
+ *
+ * @n: number to get its root
+ *
+ * Return: root of n
+ */
+int _sqrt_recursion(int n);
