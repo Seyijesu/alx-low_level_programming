@@ -26,3 +26,12 @@ void _puts_recursion(char *s);
  * Return: void
  */
 void _print_rev_recursion(char *s);
+
+/**
+ * _strlen_recursion - count length of string
+ *
+ * @s: pointing to the string to count
+ *
+ * Return: returns the length of s
+ */
+int _strlen_recursion(char *s);
