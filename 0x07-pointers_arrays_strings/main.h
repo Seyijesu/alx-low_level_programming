@@ -79,3 +79,15 @@ void print_chessboard(char (*a)[8]);
  * Retutn: integer
  */
 int _putchar(char c);
+
+/**
+ * print_diagsums - print sum of diagonal matrix
+ *
+ * @a: given arry
+ *
+ * @size: diagonal size
+ *
+ * Return: void
+ *
+ */
+void print_diagsums(int *a, int size);
