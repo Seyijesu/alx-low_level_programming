@@ -56,3 +56,14 @@ int factorial(int n);
  * Return: x to the power of y
  */
 int _pow_recursion(int x, int y);
+
+/**
+ * _pow_recursion - calculate power of x to y
+ *
+ * @x: base number
+ *
+ * @y: index
+ *
+ * Return: x to the power of y
+ */
+int _pow_recursion(int x, int y);
