@@ -51,3 +51,13 @@ unsigned int _strspn(char *s, char *accept);
  * Return: memory location of the first occurrenc
  */
 char *_strpbrk(char *s, char *accept);
+
+/**
+ * _strstr - function that locates a substring
+ *
+ * @needle: substring to look for
+ *
+ * @haystack: where to look for the substring
+ *
+*/
+char *_strstr(char *haystack, char *needle);
