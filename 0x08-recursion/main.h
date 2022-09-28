@@ -17,3 +17,12 @@ int _putchar(char c);
  * Return: s
  */
 void _puts_recursion(char *s);
+
+/**
+ * _print_rev_recursion - a function that prints a string in reverse
+ *
+ * @s: pointer pointing to the string
+ *
+ * Return: void
+ */
+void _print_rev_recursion(char *s);
