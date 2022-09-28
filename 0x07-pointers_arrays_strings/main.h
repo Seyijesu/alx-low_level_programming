@@ -40,3 +40,14 @@ char *_strchr(char *s, char c);
  *
  */
 unsigned int _strspn(char *s, char *accept);
+
+/**
+ * _strpbrk - function locates the first occurrence in the string
+ *
+ * @s: String to scan
+ *
+ * @accept: String to check for
+ *
+ * Return: memory location of the first occurrenc
+ */
+char *_strpbrk(char *s, char *accept);
