@@ -61,3 +61,21 @@ char *_strpbrk(char *s, char *accept);
  *
 */
 char *_strstr(char *haystack, char *needle);
+
+/**
+ * print_chessboard - peint chessboard
+ *
+ * @a: size of the board
+ *
+ * Return: chessboard
+ */
+void print_chessboard(char (*a)[8]);
+
+/**
+ * _putchar - print character to stdo
+ *
+ * @c: paramter to print out
+ *
+ * Retutn: integer
+ */
+int _putchar(char c);
