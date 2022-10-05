@@ -25,11 +25,12 @@ char *_strdup(char *str)
 
 	myChar = malloc(sizeof(*myChar) * len + 1);
 
-	for (i = 0; str[i] < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		myChar[i] = str[i];
 	}
 
 	myChar[i] = '\0';
 	return (myChar);
+	free(myChar);
 }
