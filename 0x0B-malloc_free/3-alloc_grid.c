@@ -21,28 +21,25 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	else
+
+	matx = (int **)malloc(height * sizeof(int *));
+	if (matx == NULL)
 	{
-		matx = malloc(height * sizeof(int **));
-		if (!matx)
-		{
-			free(matx);
-			return (NULL);
-		}
-		for (i = 0; i < height; i++)
-		{
-			matx[i] = malloc(width * sizeof(int *));
-			if (!matx[i])
-			{
-				for (j = 0; j <= i; j++)
-					free(matx[j]);
-				free(matx);
-				return (NULL);
-			}
-		}
-		for (a = 0; a < height; a++)
-			for (b = 0; b < width; b++)
-				matx[a][b] = 0;
+		return (NULL);
 	}
+
+	for (i = 0; i < height; i++)
+	{
+		matx[i] = (int *)malloc(width * sizeof(int));
+		if (matx[i] == NULL)
+		{
+			for (j = 0; j <= i; j++)
+				free(matx[j]);
+			free(matx);
+		}
+	}
+	for (a = 0; a < height; a++)
+		for (b = 0; b < width; b++)
+			matx[a][b] = 0;
 	return (matx);
 }
