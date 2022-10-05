@@ -23,6 +23,6 @@ char *create_array(unsigned int size, char c)
 	if (myChar == NULL)
 		return (NULL);
 
-	myChar[0] = c;
+	myChar[0] = *c;
 	return (myChar);
 }
