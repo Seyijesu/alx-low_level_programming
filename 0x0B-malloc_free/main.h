@@ -43,3 +43,12 @@ char *str_concat(char *s1, char *s2);
  */
 
 int **alloc_grid(int width, int height)
+
+/**
+ * free_grid - free up a grid
+ * @gird: grid to check
+ * @height: height of grid
+ *
+ */
+
+void free_grid(int **grid, int height)
