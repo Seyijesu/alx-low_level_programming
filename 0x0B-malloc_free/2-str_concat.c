@@ -3,55 +3,48 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concartinate two string
+ * str_concat - concertination
  *
- * @s1: string to concertinate too
+ * @s1: first string
  *
- * @s2: string to be concertinated
+ * @s2: second sering
  *
- * Return: s1 + s2
+ * Return: NULL or the concertinated string
+ *
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int x;
-	char *y;
-	int z;
-	int i;
-	int j;
-	int p;
+	int len1, len2, i, j, total;
+	char myChar;
+
+	if (s1 ==  NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 	}
-
 	for (j = 0; s2[j] != '\0'; j++)
 	{
 	}
 
-	if (j == 0 && i == 0)
+	total = i + j;
+	myChar = malloc(sizeof(char) * total + 1);
+	if (myChar == NULL)
+		return (NULL);
+
+	for (i = 0; s1[i] != '\0'; i++)
+		myChar[i] = s1[i];
+
+	for (j = 0; s2[j] != '\0'; j++)
 	{
-
-		x = i + j;
-
-		y = malloc(sizeof(*y) * x + 1);
-
-		if (y == NULL)
-			return (NULL);
-
-		for (z = 0; z < i; z++)
-		{
-			y[i] = s1[i];
-		}
-
-		j = 0;
-		for (p = z; p < x; p++)
-		{
-			y[p] = s2[j];
-		}
-		y[x] = '\0';
-
+		myChar[i] = s2[j];
+		i++;
 	}
-
-	free(y);
+	myChar[i] = '\0';
+	return (myChar);
+	free(myChar);
 }
