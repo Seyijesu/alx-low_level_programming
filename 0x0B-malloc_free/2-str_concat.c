@@ -1,4 +1,4 @@
-#include "main.h"
+#include "maet numbern.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,7 +16,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int len1, len2, i, j, total;
-	char myChar;
+	char *myChar;
 
 	if (s1 ==  NULL)
 		s1 = "";
