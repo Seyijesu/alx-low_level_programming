@@ -20,3 +20,14 @@ char *create_array(unsigned int size, char c);
  *
  */
 char *_strdup(char *str);
+
+/**
+ * str_concat - concartinate two string
+ *
+ * @s1: string to concertinate too
+ *
+ * @s2: string to be concertinated
+ *
+ * Return: s1 + s2
+ */
+char *str_concat(char *s1, char *s2);
