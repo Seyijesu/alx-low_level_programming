@@ -9,3 +9,14 @@
  *
  */
 char *create_array(unsigned int size, char c);
+
+
+/**
+ * _strdup - stringup
+ *
+ * @str: pointer to string
+ *
+ * Return: NULL or the pointer arry
+ *
+ */
+char *_strdup(char *str);
