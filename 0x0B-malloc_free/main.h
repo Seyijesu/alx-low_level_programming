@@ -31,3 +31,15 @@ char *_strdup(char *str);
  * Return: s1 + s2
  */
 char *str_concat(char *s1, char *s2);
+
+/**
+ * alloc_grid - 2 dimentional array
+ *
+ * @width: the width of arry
+ *
+ * @height: height of array
+ *
+ * Return: pointer array
+ */
+
+int **alloc_grid(int width, int height)
