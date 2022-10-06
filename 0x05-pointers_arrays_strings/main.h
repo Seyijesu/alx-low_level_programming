@@ -58,3 +58,13 @@ int _putchar(char c);
  * Return: void
  */
 void print_rev(char *s);
+
+/**
+ * _atoi - convert string to integer
+ *
+ * @s: string to check
+ *
+ * Return: 0 or the number
+ *
+ */
+int _atoi(char *s)
