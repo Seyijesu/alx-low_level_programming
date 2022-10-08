@@ -8,37 +8,29 @@
  * Return: 0 or the number
  *
  */
-
 int _atoi(char *s)
 {
-	int i, j;
+	int i, next;
 	int number;
 	int sign = 1;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; ++i)
 	{
-		for (j = 0; j < 10; j++)
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			if (s[i] == j)
-			{
-				if (s[i - 1] == '-')
-					sign = -1;
+			number = ((int)s[i]) - 48;
 
-				number = s[i];
-				i++;
-				for (next = 0; s[i] != '\0'; next++)
+			if (s[i - 1] == '-')
+				sign = -1;
+
+			for (i = i + 1; s[i] != '\0'; i++)
+			{
+				if (s[i] >= '0' && s[i] <= '9')
 				{
-					if (s[i] == next)
-					{
-						number = number * 10 + next;
-						i++;
-					}
-					else
-					{
-						return (number * sign);
-					}
+					number = (number * 10) + ((int)s[i] - 48);
 				}
-				return (number * sign);
+				else
+					return (number * sign);
 			}
 		}
 	}
