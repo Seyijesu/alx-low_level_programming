@@ -14,14 +14,19 @@ int _atoi(char *s)
 	int sign = 1;
 	int number;
 
+	for (i = 0; s[i] != '0' && s[i] != '9'; i++)
+	{
+		if (s[i] == '-')
+		{
+			sign *= -1;
+		}
+	}
+
 	for (i = 0; s[i] != '\0'; ++i)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			number = ((int)s[i]) - 48;
-
-			if (s[i - 1] == '-')
-				sign = -1;
 
 			for (i = i + 1; s[i] != '\0'; ++i)
 			{
