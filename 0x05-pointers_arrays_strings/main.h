@@ -68,3 +68,11 @@ void print_rev(char *s);
  *
  */
 int _atoi(char *s);
+
+/**
+ * _strcpy - copy string function
+ * @dest: destination of the new string
+ * @src: the source string
+ * Return: dest
+ */
+char *_strcpy(char *dest, char *src);
