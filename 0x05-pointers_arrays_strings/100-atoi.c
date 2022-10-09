@@ -26,7 +26,7 @@ int _atoi(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			number = ((int)s[i]) - 48;
+			number =sign * (((int)s[i]) - 48);
 
 			for (i = i + 1; s[i] != '\0'; ++i)
 			{
@@ -35,10 +35,10 @@ int _atoi(char *s)
 					number = (number * 10) + ((int)s[i] - 48);
 				}
 				else
-					return (number * sign);
+					return (number);
 			}
 
-			return (number * sign);
+			return (number);
 		}
 	}
 	return (0);
