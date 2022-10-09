@@ -67,4 +67,4 @@ void print_rev(char *s);
  * Return: 0 or the number
  *
  */
-int _atoi(char *s)
+int _atoi(char *s);
