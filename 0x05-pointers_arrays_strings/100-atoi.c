@@ -23,7 +23,7 @@ int _atoi(char *s)
 			if (s[i - 1] == '-')
 				sign = -1;
 
-			for (i = i + 1; s[i] != '\0'; i++)
+			for (i = i + 1; s[i] != '\0'; ++i)
 			{
 				if (s[i] >= '0' && s[i] <= '9')
 				{
@@ -32,6 +32,8 @@ int _atoi(char *s)
 				else
 					return (number * sign);
 			}
+
+			return (number * sign);
 		}
 	}
 	return (0);
