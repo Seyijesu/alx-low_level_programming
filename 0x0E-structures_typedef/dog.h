@@ -23,3 +23,9 @@ struct dog
  */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
+
+/**
+ * print_dog - print dog 
+ * @d: dog pointer
+ */
+void print_dog(struct dog *d);
