@@ -37,4 +37,9 @@ void print_dog(struct dog *d);
  * Return: the stored value
  */
 dog_t *new_dog(char *name, float age, char *owner);
+/**
+ * free_dog - frees dog
+ * @d: dog to free
+ */
+void free_dog(dog_t *d);
 #endif
