@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "3=cal.h"
+
 /**
  * get_op_func - get the correct operation function
  * @s: operator passed as argument
@@ -18,7 +22,7 @@ int (*get_op_func(char *s))(int, int)
 
 	for (i = 0; i < 5; i++)
 	{
-		if (ops[i]->op == *s && !((s + 1)))
+		if (ops[i]->op == *s && !(*(s + 1)))
 			return (ops[i]->f);
 	}
 	printf("Error\n");
