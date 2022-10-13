@@ -17,4 +17,14 @@ void print_name(char *name, void (*f)(char *));
  * @action: pointer to the function you need to use
  */
 void array_iterator(int *array, size_t size, void (*action)(int));
+
+/**
+ * int_index - searches for an integer
+ * @array: array of integers to check
+ * @size: size of array
+ * @cmp: function pointing to be used to compare
+ * Return: index of first int or -1
+ */
+int int_index(int *array, int size, int (*cmp)(int));
+
 #endif
