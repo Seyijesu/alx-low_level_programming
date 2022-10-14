@@ -1,5 +1,6 @@
 #ifndef VERIADIC_FUNCTIONS_H
 #define VERIADIC_FUNCTIONS_H
+#include <stdarg.h>
 
 /**
  * sum_them_all - sum all arguments
@@ -50,4 +51,11 @@ void p_string(va_list s);
   * @format: formats symbols in order
   */
 void print_all(const char * const format, ...);
+
+#define VALIDTYPESCONDITIONAL(i) (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
+typedef struct validTypes
+{
+	char *valid;
+	void (*f)();
+} v_types;
 #endif
