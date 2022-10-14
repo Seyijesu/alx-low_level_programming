@@ -21,4 +21,33 @@ void print_numbers(const char *separator, const unsigned int n, ...);
  * @n: number of strings passed to the function
  */
 void print_strings(const char *separator, const unsigned int n, ...);
+/**
+  * p_char - prints characters
+  * @c: character to print
+  */
+void p_char(va_list c);
+
+/**
+  * p_int - prints integers
+  * @i: integer to print
+  */
+void p_int(va_list i);
+
+/**
+  * p_float - prints floats
+  * @f: float to print
+  */
+void p_float(va_list f);
+
+/**
+  * p_string - prints strings
+  * @s: string to print
+  */
+void p_string(va_list s);
+
+/**
+  * print_all - prints any argument passed into it
+  * @format: formats symbols in order
+  */
+void print_all(const char * const format, ...);
 #endif
