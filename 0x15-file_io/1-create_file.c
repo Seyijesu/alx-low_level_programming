@@ -1,48 +1,31 @@
 #include "main.h"
 
 /**
- * read_textfile - function to read and print text file to stdout
- * @filename: ptr to the file to read and print
- * @letters: number of bytes to print
- * Return: 0 if failed else number of bytes printed
+ * create_file - function to create file
+ * @filename: pointer to the file name to be created
+ * @text_content: str to be written in the file
+ * Return: 1 success -1 fail
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
-	ssize_t reader, output, fd;
-	char *buff;
+	int input, output, count = 0;
 
 	if (filename == NULL)
-		return (0);
+		return (-1);
+	input = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 
-	buff = malloc(letters);
-	if (buff == NULL)
-		return (0);
+	if (input == -1)
+		return (-1);
+	if (text_content == NULL)
+		return (1);
 
-	fd = open(filename, O_RDONLY);
+	for (; text_content[count] != '\0'; count++)
+		;
 
-	if (fd == -1)
-	{
-		free(buff);
-		return (0);
-	}
+	output = write(input, text_content, count);
+	if (output == -1 || output != count)
+		return (-1);
 
-	reader = read(fd, buff, letters);
-
-	if (reader == -1)
-	{
-		free(buff);
-		return (0);
-	}
-
-	output = write(STDOUT_FILENO, buff, reader);
-
-	if (output == -1 || output != reader)
-	{
-		free(buff);
-		return (0);
-	}
-
-	close(fd);
-	free(buff);
-	return (output);
+	close(input);
+	return (1);
 }
